@@ -1,0 +1,123 @@
+:root {
+    --navbar-h: 50px;
+    --container-pad: .8em;
+
+    /* --background-color: oklch(14.1% 0.005 285.823); */
+    --background-color: oklch(14.5% 0 0);
+    --foreground-color: oklch(98.5% 0 0);
+    --foreground-gray: oklch(76.039% 0.00009 271.152);
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+html, body {
+    background-color: var(--background-color);
+    background-image: url("./assets/bg.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+    color: var(--foreground-color);
+
+    width: 100%;
+}
+
+/* NAV */
+nav {
+    height: var(--navbar-h);
+    width: 100%;
+    padding: var(--container-pad);
+    display: flex;
+}
+
+.container-nav-name {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.container-nav-name > div {
+    width: 10px;
+    height: 10px;
+
+    background-color: oklch(66.6% 0.179 58.318);
+    border-radius: 999px;
+}
+
+.nav-name {
+    font-weight: thin;
+
+    letter-spacing: .05em;
+}
+
+.nav-links {
+    display: flex;
+
+    margin-left: auto;
+    gap: 2em;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--foreground-color);
+}
+
+a:hover {
+    filter: brightness(0.7);
+}
+
+.nav-links > a {
+    color: var(--foreground-gray);
+}
+
+.nav-links > a:hover {
+    color: var(--foreground-color);
+    filter: drop-shadow(0 0 5px  var(--foreground-color));
+}
+/* END NAV */
+
+/* ABOUT ME */
+#about-me {
+    width: 100%;
+    height: calc(100svh - var(--navbar-h));
+
+    display: flex;
+    gap: 1em;
+}
+.container-grad-pic {
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.grad-pic {
+    object-fit: cover;
+
+    box-shadow: 0 0 50px black;
+}
+
+.introduction {
+    padding: 3em 1em;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introduction > h1 {
+    letter-spacing: 0.15em;
+    /* font-weight: 600; */
+}
+
+.introduction p {
+    padding-right: 2em;
+    letter-spacing: 0.1em;
+    margin-top: 2em;
+    height: 100%;
+    line-height: 2em;
+    text-align: justify;
+}
+/* END ABOUT ME */
