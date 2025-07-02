@@ -11,6 +11,7 @@
     font-style: normal;
 }
 
+/* GLOBAL */
 html, body {
     background-color: var(--background-color);
     background-image: url("./assets/bg.png");
@@ -20,6 +21,16 @@ html, body {
 
     width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: var(--foreground-color);
+}
+
+a:hover {
+    filter: brightness(0.7);
+}
+/* END GLOBAL */
 
 /* NAV */
 nav {
@@ -55,15 +66,6 @@ nav {
     margin-left: auto;
     gap: 2em;
 
-}
-
-a {
-    text-decoration: none;
-    color: var(--foreground-color);
-}
-
-a:hover {
-    filter: brightness(0.7);
 }
 
 .nav-links > a {
@@ -121,3 +123,6 @@ a:hover {
     text-align: justify;
 }
 /* END ABOUT ME */
+
+/* GALLERY */
+/* END GALLERY */
