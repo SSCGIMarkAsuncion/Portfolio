@@ -93,12 +93,13 @@ nav {
 
 /* ABOUT ME */
 #about-me {
+    position: relative;
     width: 100%;
     height: calc(100svh - var(--navbar-h));
 
     display: flex;
-    gap: 1em;
 }
+
 .container-grad-pic {
     width: 40%;
 
@@ -132,6 +133,11 @@ nav {
     height: 100%;
     line-height: 2em;
     text-align: justify;
+}
+
+.introduction h1 > span {
+    font-weight: lighter;
+    font-size: 0.5em;
 }
 /* END ABOUT ME */
 
@@ -183,7 +189,7 @@ nav {
         align-items: center;
         justify-content: center;
 
-        z-index: 50;
+        z-index: 100;
         width: 100%;
         height: 100%;
 
@@ -209,4 +215,27 @@ nav {
         height: inherit;
     }
     /* END NAV */
+
+    /* ABOUT ME */
+    #about-me {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container-grad-pic {
+        width: 100%;
+        height: 10%;
+        justify-content: center;
+    }
+
+    .grad-pic {
+        width: 50%;
+        height: auto;
+    }
+
+    .introduction {
+        position: relative;
+        padding: 0 3em 3em 3em;
+    }
+    /* END ABOUT ME */
 }
