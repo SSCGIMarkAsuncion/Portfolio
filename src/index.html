@@ -18,14 +18,20 @@
 
 <body>
     <nav id="home">
-        <span class="nav-name">Mark Anthony Asuncion</span>
+        <div class="container-nav-name">
+            <div class="small-circle red"></div>
+            <div class="small-circle orange"></div>
+            <div class="small-circle green"></div>
+            <div></div>
+            <span class="nav-name">Portfolio</span>
+        </div>
         <button class="open-nav-links" data-open-target="target-open">
             <img src="./assets/bars-solid.svg" />
         </button>
         <div id="target-open" class="nav-links">
-            <a href="#gallery">Gallery</a>
             <a href="#projects">My Projects</a>
-            <a href="#contacts">Contact Me</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact Me</a>
             <button>
                 <img src="./assets/xmark-solid.svg" />
             </button>
@@ -48,6 +54,24 @@
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     </p>
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <h1>My Projects</h1>
+            <div class="timeline">
+                <div class="vertical-line"></div>
+                <div class="project-info">
+                    <div class="timeline-container-card left text">
+                        <p>July 2024</p>
+                    </div>
+                    <div class="center">
+                        <div class="timeline-circle"></div>
+                    </div>
+                    <div class="timeline-container-card right">
+                        <div class="mcard">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,8 +111,8 @@
                 </button>
             </div>
         </div>
-        <div id="projects">
-            <h1>My Projects</h1>
+        <div id="contact">
+            <h1>Contact me</h1>
         </div>
     </div>
 
