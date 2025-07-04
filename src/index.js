@@ -9,11 +9,10 @@ function disableImageDrag() {
 function initNavlinks() {
     /** @type {HTMLDivElement | null} el  */
     const el = document.querySelector("#open-nav-link");
-    if (!el)
-        return;
-
     /** @type {HTMLDivElement | null} el  */
-    const target = document.querySelector(`#${el.dataset.openTarget}`);
+    const target = document.querySelector(`#target-open`);
+    if (!el && !target)
+        return;
 
     el.onclick = (e) => {
         e.stopPropagation();
@@ -45,7 +44,7 @@ function initBackToTopBtn() {
         }
 
         el.classList.replace("hide", "show");
-        console.log(docHeight, scrollPercent);
+        // console.log(docHeight, scrollPercent);
     };
 }
 
