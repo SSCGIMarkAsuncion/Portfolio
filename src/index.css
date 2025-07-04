@@ -2,6 +2,8 @@
     --navbar-h: 50px;
     --footer-h: 128px;
 
+    --accent: oklch(62.7% 0.265 303.9);
+
     /* --background-color: oklch(14.1% 0.005 285.823); */
     --background-color: oklch(14.5% 0 0);
     --foreground-color: oklch(98.5% 0 0);
@@ -13,11 +15,12 @@
 
 /* GLOBAL */
 html, body {
-    background-color: var(--background-color);
     background-image: url("./assets/bg.png");
     background-size: cover;
     background-repeat: repeat-y;
     background-position: 0 -100px;
+
+    background-color: var(--background-color);
     color: var(--foreground-color);
 
     width: 100%;
@@ -36,7 +39,7 @@ a:hover {
 h1 {
     letter-spacing: 0.1em;
     font-size: 2.4em;
-    /* font-weight: 600; */
+    font-weight: bold;
 }
 
 p {
@@ -68,6 +71,35 @@ p {
     width: inherit;
     height: inherit;
     padding: 4px;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.text-foreground {
+    color: var(--foreground-color);
+}
+
+.full-size {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-v-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
 }
 
 /* .body {
@@ -149,7 +181,7 @@ nav {
     display: flex;
 }
 
-.container-grad-pic {
+/* .container-grad-pic {
     width: 40%;
 
     display: flex;
@@ -164,30 +196,63 @@ nav {
     object-fit: cover;
 
     box-shadow: 0 0 50px black;
-}
+} */
 
 .introduction {
-    padding: 3em 1em;
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 2em;
 }
 
 .introduction p {
-    padding-right: 2em;
     letter-spacing: 0.1em;
     margin-top: 2em;
     height: 100%;
     line-height: 2em;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
-.introduction h1 > span {
+.introduction h1 > .text-lighter {
     font-weight: lighter;
     font-size: 0.5em;
 }
+
+#about-me .graphics {
+    width: 30%;
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+.graphics > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+    border-radius: 1em;
+    box-shadow: 0 0 10px black;
+}
+
+.graphics > img:first-child {
+    transform: translate(-50%, -120%);
+
+    z-index: 45;
+}
+
+.graphics > img:nth-child(2) {
+    transform: translate(10%, -50%);
+
+    z-index: 46;
+}
+
+.graphics > img:last-child {
+    transform: translate(-60%, 10%);
+
+    z-index: 47;
+}
+
 /* END ABOUT ME */
 
 /* GALLERY */
@@ -375,7 +440,11 @@ footer {
         height: 100%;
     }
 
-    .container-grad-pic {
+    .graphics {
+        display: none;
+    }
+
+    /* .container-grad-pic {
         width: 100%;
         height: 10%;
         justify-content: center;
@@ -384,15 +453,6 @@ footer {
     .grad-pic {
         width: 50%;
         height: auto;
-    }
-
-    .introduction {
-        position: relative;
-        padding: 0 3em 3em 3em;
-    }
-
-    .introduction p {
-        padding-right: 0;
-    }
+    } */
     /* END ABOUT ME */
 }
