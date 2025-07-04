@@ -33,7 +33,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    filter: brightness(0.7);
 }
 
 .hover-decoration-none:hover {
@@ -121,13 +120,6 @@ h2 {
     height: inherit;
 }
 
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 button {
     border: none;
     background-color: inherit;
@@ -167,6 +159,13 @@ button:hover {
 .circle-small {
     width: 10px;
     height: 10px;
+
+    border-radius: 999px;
+}
+
+.circle-medium {
+    width: 16px;
+    height: 16px;
 
     border-radius: 999px;
 }
@@ -284,7 +283,7 @@ nav {
 }
 
 .graphics > img:first-child {
-    transform: translate(-50%, -120%);
+    transform: translate(-70%, -120%);
 
     z-index: 45;
 }
@@ -292,13 +291,13 @@ nav {
 .graphics > img:nth-child(2) {
     transform: translate(10%, -50%);
 
-    z-index: 46;
+    z-index: 47;
 }
 
 .graphics > img:last-child {
-    transform: translate(-60%, 10%);
+    transform: translate(-80%, 10%);
 
-    z-index: 47;
+    z-index: 46;
 }
 
 /* END ABOUT ME */
@@ -327,7 +326,6 @@ nav {
 /* PROJECTS */
 #projects {
     width: 100%;
-    /* height: 500px; */
 
     padding: 1em;
 }
@@ -338,9 +336,9 @@ nav {
     height: 100%;
 }
 
-.vertical-line {
+.timeline-v-line {
     position: absolute;
-    width: 3px;
+    width: 2px;
     height: 100%;
 
     top: 0;
@@ -354,27 +352,28 @@ nav {
     width: 100%;
 
     display: grid;
-    grid-template-columns: 1fr 5% 1fr;
+    grid-template-columns: 1fr 3% 1fr;
 }
 
-.timeline-circle {
-    width: 24px;
-    height: 24px;
-
+.project-info .circle-medium {
     background-color: var(--foreground-color);
-    border-radius: 999px;
 }
 
 .project-container-card {
     width: 100%;
-    padding: 0.5em 3em 0.5em 3em;
+    padding: 0.5em 3em;
 }
 
-.project-container-card.left,
-.project-container-card.left > .project-card {
+.project-container-card.left {
     margin-left: auto;
     padding-right: 0;
     text-align: right;
+}
+
+.project-container-card.left > .project-card {
+    margin-left: auto;
+    padding-right: 0;
+    text-align: initial;
 }
 
 .project-container-card.right {
@@ -383,7 +382,6 @@ nav {
 
 .project-card {
     width: max-content;
-    min-width: 70%;
     height: 100%;
 
     border-radius: 0.2em;
@@ -393,13 +391,15 @@ nav {
     box-shadow: 0 0 10px black;
 }
 
-.project-container-card.left > .project-card {
-    text-align: initial;
-}
-
 .project-card-img {
     width: 100%;
     height: 150px;
+
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    overflow: hidden;
+    background-color: var(--background-color);
 }
 
 .project-card-img > img {
@@ -422,7 +422,6 @@ nav {
     justify-content: end;
     padding: 0 0.3em;
 }
-
 /* END PROJECTS */
 
 /* CONTACT */
