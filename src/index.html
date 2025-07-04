@@ -18,23 +18,23 @@
 
 <body>
     <nav id="home">
-        <div class="container-nav-name">
-            <div class="small-circle red"></div>
-            <div class="small-circle orange"></div>
-            <div class="small-circle green"></div>
+        <div class="flex flex-v-center gap-1">
+            <div class="circle-small red"></div>
+            <div class="circle-small orange"></div>
+            <div class="circle-small green"></div>
             <div></div>
             <span class="nav-name">Portfolio</span>
         </div>
-        <button class="open-nav-links" data-open-target="target-open">
-            <img src="./assets/bars-solid.svg" />
+        <button id="open-nav-link" class="icon-button" data-open-target="target-open">
+            <img style="width: 16px; height: auto;" src="./assets/bars-solid.svg" />
         </button>
-        <div id="target-open" class="nav-links">
-            <a href="#projects">My Projects</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact Me</a>
-            <button>
-                <img src="./assets/xmark-solid.svg" />
+        <div id="target-open" class="flex ml-auto gap-3">
+            <button class="icon-button lightgray">
+                <img style="width: 16px; height: 16px;" src="./assets/xmark-solid.svg" />
             </button>
+            <a href="#projects" class="nav-link hover-decoration-none">My Projects</a>
+            <a href="#gallery" class="nav-link hover-decoration-none">Gallery</a>
+            <a href="#contact" class="nav-link hover-decoration-none">Contact Me</a>
         </div>
     </nav>
 
@@ -227,7 +227,7 @@
     <footer>
     </footer>
 
-    <a href="#home" class="back-to-top hide">
+    <a href="#home" id="back-to-top" class="icon-button hide">
         <img src="./assets/angle-up-solid.svg" />
     </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

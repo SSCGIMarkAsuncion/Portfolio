@@ -8,7 +8,7 @@ function disableImageDrag() {
 
 function initNavlinks() {
     /** @type {HTMLDivElement | null} el  */
-    const el = document.querySelector(".open-nav-links");
+    const el = document.querySelector("#open-nav-link");
     if (!el)
         return;
 
@@ -18,23 +18,21 @@ function initNavlinks() {
     el.onclick = (e) => {
         e.stopPropagation();
 
-        target.classList.toggle("modal");
-        target.classList.toggle("open");
+        target.classList.toggle("modal-open");
     }
 
     const btnClose = target.querySelector("button");
     const closeFn = (e) => {
         e.stopPropagation();
 
-        target.classList.remove("modal");
-        target.classList.remove("open");
+        target.classList.remove("modal-open");
     };
     target.onclick = closeFn;
     btnClose.onclick = closeFn;
 }
 
 function initBackToTopBtn() {
-    const el = document.querySelector(".back-to-top");
+    const el = document.querySelector("#back-to-top");
     if (!el)
         return;
 
