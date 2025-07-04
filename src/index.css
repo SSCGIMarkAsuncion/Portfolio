@@ -16,10 +16,9 @@
 
 /* GLOBAL */
 html, body {
-    background-image: url("./assets/bg.png");
+    background-image: url("./assets/bg_tiled_y.png");
     background-size: cover;
     background-repeat: repeat-y;
-    background-position: 0 -100px;
 
     background-color: var(--background-color);
     color: var(--foreground-color);
@@ -431,7 +430,9 @@ footer {
     width: 100%;
     height: var(--footer-h);
 
-    background-color: red;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px) saturate(180%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 input.mform-control,
