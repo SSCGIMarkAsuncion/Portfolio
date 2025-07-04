@@ -6,6 +6,7 @@
 
     /* --background-color: oklch(14.1% 0.005 285.823); */
     --background-color: oklch(14.5% 0 0);
+    --background-lighter: oklch(43.9% 0 0);
     --foreground-color: oklch(98.5% 0 0);
     --foreground-gray: oklch(76.039% 0.00009 271.152);
 
@@ -129,9 +130,23 @@ h2 {
     align-items: center;
 }
 
-/* .body {
-    position: relative;
-} */
+button {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    padding: 0.3em 1em;
+    border-radius: 0.3em;
+
+    font-weight: 600;
+}
+
+button.accent {
+    background-color: var(--accent);
+}
+
+button:hover {
+    filter: brightness(1.3);
+}
 /* END GLOBAL */
 
 /* NAV */
@@ -302,6 +317,7 @@ nav {
     height: 100%;
 }
 /* END GALLERY */
+
 /* PROJECTS */
 #projects {
     width: 100%;
@@ -403,6 +419,13 @@ nav {
 
 /* END PROJECTS */
 
+/* CONTACT */
+#contact {
+    padding: 3em;
+}
+
+/* END CONTACT */
+
 /* FOOTER */
 footer {
     width: 100%;
@@ -410,6 +433,28 @@ footer {
 
     background-color: red;
 }
+
+input.mform-control,
+textarea.mform-control {
+    outline: none;
+    background-color: var(--background-color);
+    color: inherit;
+    padding: 0.3em 0.7em;
+    border: 2px solid var(--background-lighter);
+    border-radius: 0.5em;
+}
+
+textarea.mform-control:active,
+textarea.mform-control:focus,
+input.mform-control:active,
+input.mform-control:focus {
+    border-color: var(--accent);
+}
+
+div.mform-control {
+    margin-bottom: 0.7em;
+}
+
 /* END FOOTER */
 
 
