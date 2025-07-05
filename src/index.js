@@ -39,12 +39,35 @@ function initBackToTopBtn() {
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercent = (window.scrollY/docHeight) * 100;
         if (scrollPercent < 15) {
-            el.classList.replace("show", "hide");
+            el.classList.replace("flex", "hide");
             return;
         }
 
-        el.classList.replace("hide", "show");
+        el.classList.replace("hide", "flex");
         // console.log(docHeight, scrollPercent);
+    };
+}
+
+function applyAnimSlideOnView() {
+    const el = document.querySelectorAll(".project-card");
+    el.forEach((e) => {
+        e.classList.add("opacity-0");
+    });
+
+    /** @param {Event} e */
+    window.onscroll = () => {
+        const viewportHeight = window.innerHeight;
+        el.forEach((e) => {
+            const elHeight = e.getBoundingClientRect().height;
+            const elTop = e.getBoundingClientRect().top;
+
+            const isVisible = (viewportHeight-20 > elTop) && elTop > -elHeight;
+            // console.log(viewportHeight, elTop, isVisible);
+
+            e.classList.toggle("opacity-0", !isVisible);
+            e.classList.toggle("anim-slide-left", isVisible);
+        });
+        console.log("");
     };
 }
 
@@ -52,4 +75,5 @@ window.onload = () => {
     disableImageDrag();
     initNavlinks();
     initBackToTopBtn();
+    applyAnimSlideOnView();
 }

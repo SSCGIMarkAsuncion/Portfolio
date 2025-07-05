@@ -206,6 +206,46 @@ button:hover {
 .gap-3 {
     gap: 1.2em;
 }
+
+.anim-slide-left {
+    opacity: 0;
+    transform: translateX(+100%);
+    animation: slide-left 300ms ease-in forwards;
+}
+
+.anim-slide-right {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-right 300ms ease-in forwards;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(+100%);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.opacity-0 {
+    opacity: 0;
+}
 /* END GLOBAL */
 
 /* NAV */

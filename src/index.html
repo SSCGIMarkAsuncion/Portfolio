@@ -42,7 +42,7 @@
 <div id="about-me">
 <div class="introduction">
     <div>
-        <h1>
+        <h1 class="anim-slide-right">
             <span class="text-lighter">
                 Hi, my name is
             </span><br />
@@ -52,7 +52,7 @@
         </h1>
     </div>
     <div>
-        <p>
+        <p class="anim-slide-right" style="animation-delay: 200ms;">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
         </p>
     </div>
@@ -69,111 +69,86 @@
 <div id="projects">
 <h2 style="margin-bottom: 1em;" class="text-center">My Projects</h2>
 <div class="timeline">
-    <div class="projects-list flex flex-column">
-        <div class="project-info gap-3">
-            <div class="timeline-v-line flex flex-column flex-v-center">
-                <div class="circle-medium"></div>
+<div class="projects-list flex flex-column">
+    <div class="project-info gap-3">
+        <div class="timeline-v-line flex flex-column flex-v-center">
+            <div class="circle-medium"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-card-img">
+                <img src="./assets/cli_chat.png" />
             </div>
-            <div class="project-card">
-                <div class="project-card-img">
-                    <img src="./assets/cli_chat.png" />
+            <div class="project-card-content">
+                <div class="title flex flex-v-center">
+                    <h3> CLI Chat </h3>
+                    <p style="margin-left: auto;"> March 2024 </p>
                 </div>
-                <div class="project-card-content">
-                    <div class="title flex flex-v-center">
-                        <h3> CLI Chat </h3>
-                        <p style="margin-left: auto;"> March 2024 </p>
-                    </div>
-                    <ul>
-                        <li>Command line chat app</li>
-                        <li>Python</li>
-                    </ul>
-                    <div class="project-card-links">
-                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;"
-                            href="https://github.com/Mark-Asuncion/l-p2p-clichatapp">
-                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
-                            Github
-                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
-                        </a>
-                    </div>
+                <ul>
+                    <li>Command line chat app</li>
+                    <li>Python</li>
+                </ul>
+                <div class="project-card-links">
+                    <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;"
+                        href="https://github.com/Mark-Asuncion/l-p2p-clichatapp">
+                        <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
+                        Github
+                        <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
+                    </a>
                 </div>
             </div>
         </div>
-
-        <div class="project-info gap-3">
-            <div class="timeline-v-line flex flex-column flex-v-center">
-                <div class="circle-medium"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-card-img">
-                    <img src="./assets/img_to_ascii.png" />
-                </div>
-                <div class="project-card-content">
-                    <div class="title flex flex-v-center">
-                        <h3> Image to Text </h3>
-                        <p style="margin-left: auto;"> July 2024 </p>
-                    </div>
-                    <ul>
-                        <li>Converts image to a text</li>
-                        <li>C++</li>
-                    </ul>
-                    <div class="project-card-links">
-                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;" href="https://github.com/Mark-Asuncion/img-to-text">
-                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
-                            Github
-                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-info gap-3">
-            <div class="timeline-v-line flex flex-column flex-v-center">
-                <div class="circle-medium"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-card-img">
-                    <img src="./assets/github_follower_list.png" />
-                </div>
-                <div class="project-card-content">
-                    <div class="title flex flex-v-center">
-                        <h3> Github follower list </h3>
-                        <p style="margin-left: auto;"> July 2024 </p>
-                    </div>
-                    <ul>
-                        <li>Lists a given user followers</li>
-                        <li>Using Github API</li>
-                        <li>Angular</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- <div class="project-info">
-            <div class="project-container-card left">
-                <div class="project-card">
-                    <div class="project-card-img">
-                        <img src="./assets/github_follower_list.png" />
-                    </div>
-                    <div class="project-card-content">
-                        <p>Github follower list</p>
-                        <ul>
-                            <li>Lists a given user followers</li>
-                            <li>Using Github API</li>
-                            <li>Angular</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-column flex-center">
-                <div class="circle-medium"></div>
-            </div>
-            <div class="project-container-card right flex flex-column flex-h-center">
-                <p class="m-0">July 2025</p>
-            </div>
-        </div> -->
-
     </div>
+
+    <div class="project-info gap-3">
+        <div class="timeline-v-line flex flex-column flex-v-center">
+            <div class="circle-medium"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-card-img">
+                <img src="./assets/img_to_ascii.png" />
+            </div>
+            <div class="project-card-content">
+                <div class="title flex flex-v-center">
+                    <h3> Image to Text </h3>
+                    <p style="margin-left: auto;"> July 2024 </p>
+                </div>
+                <ul>
+                    <li>Converts image to a text</li>
+                    <li>C++</li>
+                </ul>
+                <div class="project-card-links">
+                    <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;" href="https://github.com/Mark-Asuncion/img-to-text">
+                        <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
+                        Github
+                        <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-info gap-3">
+        <div class="timeline-v-line flex flex-column flex-v-center">
+            <div class="circle-medium"></div>
+        </div>
+        <div class="project-card">
+            <div class="project-card-img">
+                <img src="./assets/github_follower_list.png" />
+            </div>
+            <div class="project-card-content">
+                <div class="title flex flex-v-center">
+                    <h3> Github follower list </h3>
+                    <p style="margin-left: auto;"> July 2024 </p>
+                </div>
+                <ul>
+                    <li>Lists a given user followers</li>
+                    <li>Using Github API</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 </div>
 
