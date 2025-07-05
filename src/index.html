@@ -17,248 +17,238 @@
 </head>
 
 <body>
-    <nav id="home">
-        <div class="flex flex-v-center gap-1">
-            <div class="circle-small red"></div>
-            <div class="circle-small orange"></div>
-            <div class="circle-small green"></div>
-            <div></div>
-            <span class="nav-name">Portfolio</span>
-        </div>
-        <button id="open-nav-link" class="icon-button">
-            <img style="width: 16px; height: auto;" src="./assets/bars-solid.svg" />
+<nav id="home">
+    <div class="flex flex-v-center gap-1">
+        <div class="circle-small red"></div>
+        <div class="circle-small orange"></div>
+        <div class="circle-small green"></div>
+        <div></div>
+        <span class="nav-name">Portfolio</span>
+    </div>
+    <button id="open-nav-link" class="icon-button">
+        <img style="width: 16px; height: auto;" src="./assets/bars-solid.svg" />
+    </button>
+    <div id="target-open" class="flex ml-auto gap-3">
+        <button class="icon-button lightgray">
+            <img style="width: 16px; height: 16px;" src="./assets/xmark-solid.svg" />
         </button>
-        <div id="target-open" class="flex ml-auto gap-3">
-            <button class="icon-button lightgray">
-                <img style="width: 16px; height: 16px;" src="./assets/xmark-solid.svg" />
-            </button>
-            <a href="#projects" class="nav-link hover-decoration-none">My Projects</a>
-            <a href="#gallery" class="nav-link hover-decoration-none">Gallery</a>
-            <a href="#contact" class="nav-link hover-decoration-none">Contact Me</a>
-        </div>
-    </nav>
+        <a href="#projects" class="nav-link hover-decoration-none">My Projects</a>
+        <a href="#gallery" class="nav-link hover-decoration-none">Gallery</a>
+        <a href="#contact" class="nav-link hover-decoration-none">Contact Me</a>
+    </div>
+</nav>
 
-    <div class="body">
-        <div id="about-me">
-            <div class="introduction">
-                <div>
-                    <h1>
-                        <span class="text-lighter">
-                            Hi, my name is
-                        </span><br />
-                        <span class="text-accent text-bold">
-                            Mark Anthony Asuncion
-                        </span>
-                    </h1>
-                </div>
-                <div>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                    </p>
-                </div>
+<div class="body">
+<div id="about-me">
+<div class="introduction">
+    <div>
+        <h1>
+            <span class="text-lighter">
+                Hi, my name is
+            </span><br />
+            <span class="text-accent text-bold">
+                Mark Anthony Asuncion
+            </span>
+        </h1>
+    </div>
+    <div>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p>
+    </div>
+</div>
+<div class="full-size">
+    <div class="graphics">
+        <img src="https://cdn-icons-png.flaticon.com/256/6132/6132222.png" />
+        <img src="https://ellipsiseducation.com/wp-content/uploads/2023/02/javascript-736400_1280.png" />
+        <img src="https://www.netgen.co.za/wp-content/uploads/2022/03/C-image-for-Netgen.png" />
+    </div>
+</div>
+</div>
+
+<div id="projects">
+<h2 style="margin-bottom: 1em;" class="text-center">My Projects</h2>
+<div class="timeline">
+    <div class="projects-list flex flex-column">
+        <div class="project-info gap-3">
+            <div class="timeline-v-line flex flex-column flex-v-center">
+                <div class="circle-medium"></div>
             </div>
-            <div class="full-size">
-                <div class="graphics">
-                    <img src="https://cdn-icons-png.flaticon.com/256/6132/6132222.png" />
-                    <img src="https://ellipsiseducation.com/wp-content/uploads/2023/02/javascript-736400_1280.png" />
-                    <img src="https://www.netgen.co.za/wp-content/uploads/2022/03/C-image-for-Netgen.png" />
+            <div class="project-card">
+                <div class="project-card-img">
+                    <img src="./assets/cli_chat.png" />
                 </div>
-            </div>
-        </div>
-
-        <div id="projects">
-            <h2 style="margin-bottom: 1em;" class="text-center">My Projects</h2>
-            <div class="timeline">
-                <div class="flex flex-column">
-                    <div class="project-info gap-3">
-                        <div class="timeline-v-line flex flex-column flex-center">
-                            <div class="circle-medium"></div>
-                        </div>
-                        <div class="flex flex-column" style="width: 100%;">
-                            <p>March 2024</p>
-                            <div class="project-card">
-                                <div class="project-card-img">
-                                    <img src="./assets/cli_chat.png" />
-                                </div>
-                                <div class="project-card-content">
-                                    <p>CLI Chat</p>
-                                    <ul>
-                                        <li>Command line chat app</li>
-                                        <li>Python</li>
-                                    </ul>
-                                    <div class="project-card-links">
-                                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;"
-                                            href="https://github.com/Mark-Asuncion/l-p2p-clichatapp">
-                                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
-                                            Github
-                                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="project-card-content">
+                    <div class="title flex flex-v-center">
+                        <h3> CLI Chat </h3>
+                        <p style="margin-left: auto;"> March 2024 </p>
                     </div>
-
-                    <!-- <div class="project-info">
-                        <div class="project-container-card left">
-                            <div class="project-card">
-                                <div class="project-card-img">
-                                    <img src="./assets/cli_chat.png" />
-                                </div>
-                                <div class="project-card-content">
-                                    <p>CLI Chat</p>
-                                    <ul>
-                                        <li>Command line chat app</li>
-                                        <li>Python</li>
-                                    </ul>
-                                    <div class="project-card-links">
-                                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;" href="https://github.com/Mark-Asuncion/l-p2p-clichatapp">
-                                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
-                                            Github
-                                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-column flex-center">
-                            <div class="circle-medium"></div>
-                        </div>
-                        <div class="project-container-card right flex flex-column flex-h-center">
-                            <p class="m-0">March 2024</p>
-                        </div>
+                    <ul>
+                        <li>Command line chat app</li>
+                        <li>Python</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;"
+                            href="https://github.com/Mark-Asuncion/l-p2p-clichatapp">
+                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
+                            Github
+                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
+                        </a>
                     </div>
-
-                    <div class="project-info">
-                        <div class="project-container-card left flex flex-column flex-h-center">
-                            <p class="m-0">July 2024</p>
-                        </div>
-                        <div class="flex flex-column flex-center">
-                            <div class="circle-medium"></div>
-                        </div>
-                        <div class="project-container-card right">
-                            <div class="project-card">
-                                <div class="project-card-img">
-                                    <img src="https://preview.redd.it/macintosh-ascii-art-v0-dr1hv3peccv91.jpg?width=1080&crop=smart&auto=webp&s=568161bb0b9093aeb6894f15860731fcb83e2e6b" />
-                                </div>
-                                <div class="project-card-content">
-                                    <p>Image to Text</p>
-                                    <ul>
-                                        <li>Converts image to a text</li>
-                                        <li>C++</li>
-                                    </ul>
-                                    <div class="project-card-links">
-                                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;" href="https://github.com/Mark-Asuncion/img-to-text">
-                                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
-                                            Github
-                                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-info">
-                        <div class="project-container-card left">
-                            <div class="project-card">
-                                <div class="project-card-img">
-                                    <img src="./assets/github_follower_list.png" />
-                                </div>
-                                <div class="project-card-content">
-                                    <p>Github follower list</p>
-                                    <ul>
-                                        <li>Lists a given user followers</li>
-                                        <li>Using Github API</li>
-                                        <li>Angular</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-column flex-center">
-                            <div class="circle-medium"></div>
-                        </div>
-                        <div class="project-container-card right flex flex-column flex-h-center">
-                            <p class="m-0">July 2025</p>
-                        </div>
-                    </div> -->
-
                 </div>
             </div>
         </div>
 
-        <div id="gallery">
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img draggable="false"
-                            src="https://images.unsplash.com/photo-1493612276216-ee3925520721?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fHww"
-                            alt="random 1" />
+        <div class="project-info gap-3">
+            <div class="timeline-v-line flex flex-column flex-v-center">
+                <div class="circle-medium"></div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-img">
+                    <img src="./assets/img_to_ascii.png" />
+                </div>
+                <div class="project-card-content">
+                    <div class="title flex flex-v-center">
+                        <h3> Image to Text </h3>
+                        <p style="margin-left: auto;"> July 2024 </p>
                     </div>
-                    <div class="carousel-item">
-                        <img draggable="false"
-                            src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
-                            alt="random 2" />
-                    </div>
-                    <div class="carousel-item">
-                        <img draggable="false"
-                            src="https://www.shutterstock.com/image-photo/these-some-random-photos-260nw-2402066699.jpg"
-                            alt="random 3" />
-                    </div>
-                    <div class="carousel-item">
-                        <img  draggable="false"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c1y_7gy2crn2Ll_ZSWzcqb0WDZFuBnFTeQ&s"
-                            alt="random 4" />
+                    <ul>
+                        <li>Converts image to a text</li>
+                        <li>C++</li>
+                    </ul>
+                    <div class="project-card-links">
+                        <a class="flex flex-v-center text-background" target="_blank" style="gap: 3px;" href="https://github.com/Mark-Asuncion/img-to-text">
+                            <img style="width: 16px; height: 16px;" src="./assets/github-brands.svg" />
+                            Github
+                            <img style="width: 12px; height: 12px; transform: rotate(45deg);" src="./assets/arrow-up-solid.svg" />
+                        </a>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-        <div id="contact">
-            <h2>CONTACT ME</h2>
-            <form action="mailto:maasuncion@sscgi.com">
-                <div class="md-form-name-number flex gap-3">
-                    <div class="mform-control flex flex-column gap-1 flex-fill">
-                        <label for="name">Name: </label>
-                        <input placeholder="John Doe" id="name" type="text" class="mform-control" />
+
+        <div class="project-info gap-3">
+            <div class="timeline-v-line flex flex-column flex-v-center">
+                <div class="circle-medium"></div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-img">
+                    <img src="./assets/github_follower_list.png" />
+                </div>
+                <div class="project-card-content">
+                    <div class="title flex flex-v-center">
+                        <h3> Github follower list </h3>
+                        <p style="margin-left: auto;"> July 2024 </p>
                     </div>
-                    <div class="mform-control flex flex-column gap-1 flex-fill">
-                        <label for="number">Number: </label>
-                        <input id="number" type="text" pattern="[0-9]+"
-                         placeholder="09xxxxxxxxx"
-                         class="mform-control" />
+                    <ul>
+                        <li>Lists a given user followers</li>
+                        <li>Using Github API</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="project-info">
+            <div class="project-container-card left">
+                <div class="project-card">
+                    <div class="project-card-img">
+                        <img src="./assets/github_follower_list.png" />
+                    </div>
+                    <div class="project-card-content">
+                        <p>Github follower list</p>
+                        <ul>
+                            <li>Lists a given user followers</li>
+                            <li>Using Github API</li>
+                            <li>Angular</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="mform-control flex flex-column gap-1">
-                    <label for="email">Email: </label>
-                    <input placeholder="john@email.com" id="email" type="text" class="mform-control" />
-                </div>
-                <div class="mform-control flex flex-column gap-1">
-                    <label for="comment">Comment: </label>
-                    <textarea id="comment" class="mform-control" rows="5"></textarea>
-                </div>
-                <button class="accent" type="submit">Submit</button>
-            </form>
+            </div>
+            <div class="flex flex-column flex-center">
+                <div class="circle-medium"></div>
+            </div>
+            <div class="project-container-card right flex flex-column flex-h-center">
+                <p class="m-0">July 2025</p>
+            </div>
+        </div> -->
+
+    </div>
+</div>
+</div>
+
+<div id="gallery">
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img draggable="false"
+                src="https://images.unsplash.com/photo-1493612276216-ee3925520721?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fHww"
+                alt="random 1" />
+        </div>
+        <div class="carousel-item">
+            <img draggable="false"
+                src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg"
+                alt="random 2" />
+        </div>
+        <div class="carousel-item">
+            <img draggable="false"
+                src="https://www.shutterstock.com/image-photo/these-some-random-photos-260nw-2402066699.jpg"
+                alt="random 3" />
+        </div>
+        <div class="carousel-item">
+            <img  draggable="false"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4c1y_7gy2crn2Ll_ZSWzcqb0WDZFuBnFTeQ&s"
+                alt="random 4" />
         </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+</div>
+<div id="contact">
+<h2>CONTACT ME</h2>
+<form action="mailto:maasuncion@sscgi.com">
+    <div class="md-form-name-number flex gap-3">
+        <div class="mform-control flex flex-column gap-1 flex-fill">
+            <label for="name">Name: </label>
+            <input placeholder="John Doe" id="name" type="text" class="mform-control" />
+        </div>
+        <div class="mform-control flex flex-column gap-1 flex-fill">
+            <label for="number">Number: </label>
+            <input id="number" type="text" pattern="[0-9]+"
+                placeholder="09xxxxxxxxx"
+                class="mform-control" />
+        </div>
+    </div>
+    <div class="mform-control flex flex-column gap-1">
+        <label for="email">Email: </label>
+        <input placeholder="john@email.com" id="email" type="text" class="mform-control" />
+    </div>
+    <div class="mform-control flex flex-column gap-1">
+        <label for="comment">Comment: </label>
+        <textarea id="comment" class="mform-control" rows="5"></textarea>
+    </div>
+    <button class="accent" type="submit">Submit</button>
+</form>
+</div>
+</div>
 
-    <footer>
-        <p>footer here</p>
-    </footer>
+<footer>
+    <p>footer here</p>
+</footer>
 
-    <a href="#home" id="back-to-top" class="icon-button lightgray hide flex flex-center">
-        <img style="width: 22px; height: auto;" src="./assets/angle-up-solid.svg" />
-    </a>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<a href="#home" id="back-to-top" class="icon-button lightgray hide flex flex-center">
+    <img style="width: 22px; height: auto;" src="./assets/angle-up-solid.svg" />
+</a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 
 </html>
