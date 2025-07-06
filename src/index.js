@@ -35,9 +35,10 @@ function initBackToTopBtn() {
     if (!el)
         return;
 
-    window.onscroll = (e) => {
+    window.addEventListener("scroll", () => {
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrollPercent = (window.scrollY/docHeight) * 100;
+
         if (scrollPercent < 15) {
             el.classList.replace("flex", "hide");
             return;
@@ -45,7 +46,7 @@ function initBackToTopBtn() {
 
         el.classList.replace("hide", "flex");
         // console.log(docHeight, scrollPercent);
-    };
+    });
 }
 
 function applyAnimSlideOnView() {
@@ -55,7 +56,7 @@ function applyAnimSlideOnView() {
     });
 
     /** @param {Event} e */
-    window.onscroll = () => {
+    window.addEventListener("scroll", () => {
         const viewportHeight = window.innerHeight;
         el.forEach((e) => {
             const elHeight = e.getBoundingClientRect().height;
@@ -68,7 +69,7 @@ function applyAnimSlideOnView() {
             e.classList.toggle("anim-slide-left", isVisible);
         });
         console.log("");
-    };
+    });
 }
 
 window.onload = () => {
