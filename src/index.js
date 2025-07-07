@@ -71,7 +71,7 @@ function applyAnimSlideOnView() {
             e.classList.toggle("opacity-0", !isVisible);
             e.classList.toggle("anim-slide-left", isVisible);
         });
-        console.log("");
+        // console.log("");
     });
 }
 

@@ -535,7 +535,7 @@ footer {
     backdrop-filter: blur(50px) saturate(180%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-    padding: 1em;
+    padding: 0 0.5em;
 }
 
 .footer-body {
