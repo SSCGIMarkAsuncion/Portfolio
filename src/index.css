@@ -230,6 +230,21 @@ button:hover {
     animation: slide-right 300ms ease-in forwards;
 }
 
+.anim-fade-in {
+    opacity: 0;
+    animation: fade-in 800ms ease-in forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 @keyframes slide-left {
     0% {
         opacity: 0;
@@ -578,6 +593,7 @@ footer {
     /* ABOUT ME */
     #about-me {
         flex-direction: column;
+        height: max-content;
     }
 
     .introduction {
@@ -612,7 +628,9 @@ footer {
         padding: 0 1em;
     }
     
+
     .timeline-v-line {
+        width: 3px;
         margin-right: 1em;
     }
     .project-card {

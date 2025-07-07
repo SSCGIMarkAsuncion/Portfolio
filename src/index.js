@@ -14,10 +14,12 @@ function initNavlinks() {
     if (!el && !target)
         return;
 
+    target.style.animationDuration = "100ms";
     el.onclick = (e) => {
         e.stopPropagation();
 
         target.classList.toggle("modal-open");
+        target.classList.toggle("anim-fade-in");
     }
 
     const btnClose = target.querySelector("button");
@@ -25,6 +27,7 @@ function initNavlinks() {
         e.stopPropagation();
 
         target.classList.remove("modal-open");
+        target.classList.remove("anim-fade-in");
     };
     target.onclick = closeFn;
     btnClose.onclick = closeFn;
