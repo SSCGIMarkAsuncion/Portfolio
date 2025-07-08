@@ -615,6 +615,18 @@ footer {
     }
     /* END ABOUT ME */
 
+    /* GALLERY */
+    #gallery {
+        height: auto;
+    }
+
+    #gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* END GALLERY */
+
     /* CONTACT */
     .md-form-name-number {
         flex-direction: column;
