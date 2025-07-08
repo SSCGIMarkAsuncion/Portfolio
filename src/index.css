@@ -505,6 +505,10 @@ nav {
     padding: 3em;
 }
 
+.contact-container {
+    display: flex;
+}
+
 input.mform-control,
 textarea.mform-control {
     outline: none;
@@ -637,6 +641,22 @@ footer {
         margin: 1em 0;
     }
     /* END PROJECTS */
+
+    /* CONTACT */
+    #contact {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-container > iframe {
+        width: 100%;
+    }
+    /* END CONTACT */
+
 
     /* FOOTER */
     .footer-body {
