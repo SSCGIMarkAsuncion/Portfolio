@@ -1,10 +1,10 @@
-function disableImageDrag() {
-    const imgs = document.querySelectorAll("img[draggable=\"false\"");
-    imgs.forEach((v) => v.ondragstart = (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-    });
-}
+// function disableImageDrag() {
+//     const imgs = document.querySelectorAll("img[draggable=\"false\"");
+//     imgs.forEach((v) => v.ondragstart = (e) => {
+//         e.preventDefault();
+//         e.stopPropagation();
+//     });
+// }
 
 function initNavlinks() {
     /** @type {HTMLDivElement | null} el  */
@@ -76,7 +76,7 @@ function applyAnimSlideOnView() {
 }
 
 window.onload = () => {
-    disableImageDrag();
+    // disableImageDrag();
     initNavlinks();
     initBackToTopBtn();
     applyAnimSlideOnView();
